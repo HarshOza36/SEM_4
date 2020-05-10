@@ -14,7 +14,7 @@
 
 6.[To implement Restoring Division Algorithm](https://github.com/HarshOza36/SEM_4/blob/master/COA-Process%20Architecture%20Lab/exp6/exp6.c)
 
-7.[To implement  Non Restoring Division Algorithm](https://github.com/HarshOza36/SEM_4/blob/master/COA-Process%20Architecture%20Lab/exp9/exp7.c)
+7.[To implement  Non Restoring Division Algorithm](https://github.com/HarshOza36/SEM_4/blob/master/COA-Process%20Architecture%20Lab/exp7/exp7.c)
 
 8.[Case Study on Multi-Core Processors](https://github.com/HarshOza36/SEM_4/blob/master/COA-Process%20Architecture%20Lab/exp8/multiCoreProcessors.docx)
 
