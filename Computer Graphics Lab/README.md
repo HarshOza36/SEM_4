@@ -1,6 +1,6 @@
 ```
-To use these codes Use TURBO C7 compiler and once in the compiler 
-Go To Options->Linker->Libraries and Select Graphics Library which enables Graphics in Turbo C
+ To use these codes Use TURBO C7 compiler and once in the compiler 
+ Go To Options->Linker->Libraries and Select Graphics Library which enables Graphics in Turbo C
 ```
 
 # Practical List 
