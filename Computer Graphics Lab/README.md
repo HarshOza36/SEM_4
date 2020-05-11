@@ -1,3 +1,8 @@
+```
+To use these codes Use TURBO C7 compiler and once in the compiler 
+Go To Options->Linker->Libraries and Select Graphics Library which enables Graphics in Turbo C
+```
+
 # Practical List 
 
 1.[Implement DDA line Drawing Algorithm and Bresenham algorithm](https://github.com/HarshOza36/SEM_4/tree/master/Computer%20Graphics%20Lab/exp1)
