@@ -1,0 +1,3 @@
+* linguist-vendored
+*.rtf linguist-vendored=false
+*.docx linguist-vendored=false
