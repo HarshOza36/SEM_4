@@ -1,0 +1,154 @@
+l=[]
+e=[]
+o=[]
+ms=[]
+n=input("ENTER THE MAX ELEMENTS >>> ")
+for i in range(0,n):
+	x=input("ENTER ELEMENTS>>> ")
+	l.append(x)
+print l
+ch=0
+while(ch!=10):
+	print "***********MENU*************"
+	print "1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST"
+	print "3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT"
+	print "4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT"
+	print "6.WORDS GREATER THAN GIVEN VALUE 10.EXIT"
+	ch=input("ENTER YOUR CHOICE")
+	if(ch==1):
+		for i in l:
+			if(i%2==0):
+				e.append(i)
+			else:
+				o.append(i)
+		print e
+		print o
+	
+	elif(ch==2):
+		ms=o+e
+		print "MERGING>>>> ",ms
+		ms.sort()
+		print "SORTING>>>> ",ms
+	elif(ch==3):
+		mid=n/2
+		o=ms[mid]
+		ms.remove(o)
+		print"USING THE SORTED LIST DELETING MIDDLE ELEMENT"
+		print ms
+	elif(ch==4):
+		h=input("ENTER NUMBER TO UPDATE>>>>")
+		ms[0]=h
+		print ms
+	
+		print"USING THE UPDATED LIST>>>>>"
+		a=max(ms)
+		b=min(ms)
+		print"MAXIMUM>>>> ",a
+		print"MINIMUM>>>> ",b
+	elif(ch==5):
+		a=input(" HOW MANY VALUES TO APPEND ? ")
+		for i in range(0,a):
+			m=input("ENTER new items")
+			ms.append(m)
+		print ms
+		for i in ms:
+			if(i=='python'):
+				f=1
+				break
+		if(f==1):
+			print "PYTHON PRESENT!!!"
+		else:
+			print "NO PYTHON!!!"
+	elif(ch==6):
+		st=input("ENTER A STRING")
+		str1=st.split(" ")
+		print str1
+		n=input("GIVE THE LENGTH FOR WHICH GREATER ELEMENTS WILL ADD")	
+		for word in str1:
+			if(len(word) > n):
+				ms.append(word)
+		print ms
+	elif(ch==10):
+		print "EXIT"	
+	else:
+		print "INVALID CHOICE"
+
+
+
+"""
+OUTPUT:
+
+[student@localhost]$ python exp2.py
+ENTER THE MAX ELEMENTS >>> 5
+ENTER ELEMENTS>>> 89
+ENTER ELEMENTS>>> 33
+ENTER ELEMENTS>>> 56
+ENTER ELEMENTS>>> 2
+ENTER ELEMENTS>>> 7
+[89, 33, 56, 2, 7]
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 1
+[56, 2]
+[89, 33, 7]
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 2
+MERGING>>>>  [89, 33, 7, 56, 2]
+SORTING>>>>  [2, 7, 33, 56, 89]
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 3
+USING THE SORTED LIST DELETING MIDDLE ELEMENT
+[2, 7, 56, 89]
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 4
+ENTER NUMBER TO UPDATE>>>>45
+[45, 7, 56, 89]
+USING THE UPDATED LIST>>>>>
+MAXIMUM>>>>  89
+MINIMUM>>>>  7
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 5
+ HOW MANY VALUES TO APPEND ? 3
+ENTER new items'qwerty'   
+ENTER new items'java'
+ENTER new items'python'
+[45, 7, 56, 89, 'qwerty', 'java', 'python']
+PYTHON PRESENT!!!
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 6   
+ENTER A STRING'HIGHWAY TO HELL'
+['HIGHWAY', 'TO', 'HELL']
+GIVE THE LENGTH FOR WHICH GREATER ELEMENTS WILL ADD 3
+[45, 7, 56, 89, 'qwerty', 'java', 'python', 'HIGHWAY', 'HELL']
+***********MENU*************
+1.EVEN ODD IN 2 LISTS   2. MERGE AND SORT THE LIST
+3.UPDATE FIRST ELEMENT AND DELETE MIDDLE ELEMENT
+4.MIN MAX  5.ADD N NAMES AND FIND PYTHON IN IT
+6.WORDS GREATER THAN GIVEN VALUE 10.EXIT
+ENTER YOUR CHOICE 10
+EXIT
+
+"""
